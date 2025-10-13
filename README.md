@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <meta charset="UTF-8">
@@ -23,6 +22,8 @@
                 border-collapse: collapse;
                 padding:5px;
                 margin-left: 20px;
+                background-color: rgb(94, 94, 94);
+                color: rgb(230, 225, 225);
             }
         </style>
     </head>
