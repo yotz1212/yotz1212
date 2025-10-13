@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <title> 運算符 </title>
+    <head> 
+        <style>
+            h2 {
+                color: rgb(249, 193, 120);            
+            }
+            p {
+                color: rgb(230, 225, 225);
+                margin-left: 20px;
+            }
+            .myDiv {
+                background-color: rgb(94, 94, 94);
+                border: 1px solid rgb(94, 94, 94);
+                padding: 20px;
+            }
+            table, th, td {
+                border: 1px solid rgb(230, 225, 225);
+                color: rgb(230, 225, 225);
+                text-align: center;
+                border-collapse: collapse;
+                padding:5px;
+                margin-left: 20px;
+                
+            }
+        </style>
+    </head>
+
+    <body style="background-color:rgb(42, 42, 42)">
+        <div class="myDiv">
+            <h2>邏輯運算符</h2>
+            <a href="Python.html" style="font-size: 20px; color:rgb(0, 187, 255)"> Back </a>
+            <p>
+                and 左右兩邊的條件都為True 才為True x < 5 and x < 10<br>
+                or  其中一個條件為True 就為True x < 5 or x < 4<br>
+                not 把True 變成False, False 變成True<br><br>
+
+                身分運算符<br>
+                is 判斷是同一個對象，具有相同的記憶體位置 a is b<br>
+                is not 判斷不是同一個對象，具有相同的記憶體位置 a is not b<br><br>
+
+                成員運算符<br>
+                in 值是否在物件中 a in b<br>
+                not in 值是否不在物件中<br><br>
+
+                位元運算符，禁制運算<br>
+                <table>
+                    <tr>
+                        <th >運算符 </th>
+                        <th> 描述 </th>
+                        <th> 運算 </th>
+                    </tr>
+                    <tr>
+                        <td> &  </td>                            
+                        <td> 禁制運算的 AND </td>
+                        <td> a & b</td>
+                    </tr>
+                    <tr>
+                        <td> | </td>
+                        <td> 禁制運算的 OR </td>
+                        <td> a | b</td>
+                    </tr>
+                    <tr>
+                        <td> ^ </td>
+                        <td> 禁制運算的 XOR </td>
+                        <td> a ^ b </td>
+                    </tr>
+                    <tr>
+                        <td> ~ </td>
+                        <td> 禁制運算的 NOT </td>
+                        <td> a ~ b</td>
+                    </tr>
+                    <tr>
+                        <td> << </td>
+                        <td> a 乘２做兩次 </td>
+                        <td> a << 2</td>
+                    </tr>
+                    <tr>
+                        <td> >> </td>
+                        <td> a 除２做兩次 </td>
+                        <td> a >> 2</td>
+                    </tr>
+                </table>
+            </p>
+            <p>
+            運算符優先級<br>
+            (1 + 2) / 3 ()有最高優先級
+            </p>
+        </div>
+    </body>
+</html>
