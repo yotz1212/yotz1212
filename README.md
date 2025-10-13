@@ -1,16 +1,312 @@
-## Hi there 👋
 
-<!--
-**yotz1212/yotz1212** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <style>
+            h2 {
+                color: rgb(249, 193, 120);            
+            }
+            p {
+                color: rgb(230, 225, 225);
+                margin-left: 20px;
+            }
+            .myDiv {
+                background-color: rgb(94, 94, 94);
+                border: 1px solid rgb(94, 94, 94);
+                padding: 20px;
+            }
+            table, th, td {
+                border: 1px solid rgb(230, 225, 225);
+                color: rgb(230, 225, 225);
+                text-align: center;
+                border-collapse: collapse;
+                padding:5px;
+                margin-left: 20px;
+            }
+        </style>
+    </head>
 
-Here are some ideas to get you started:
+    <body style="background-color:rgb(42, 42, 42)">
+        <h1 style="color: rgb(230, 225,225)"> Python </h1>
+        <!-- intput output -->
+        <div class="myDiv">
+            <h2 style="text-align:left"> 輸入輸出 </h2>
+                <p> 
+                    input() 會從鍵盤接收輸入的東西，input 進來的是str字串<br>
+                    print() 會把()內的東西輸出到名螢幕上
+                </p>
+        </div>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+        <!-- assign -->
+        <br>
+        <div class="myDiv">
+            <h2> = ;assign</h2>
+                <p>
+                    a = input()<br>
+                    分成=左邊跟右邊來看，先右邊的所以運算值什麼的都算完後最終的值assign(賦予) 給a<br>
+                </p>
+        </div>
+        <br>
+
+        <!-- Data Type -->
+        <div class="myDiv">
+            <h2> 資料類型 </h2>
+                <p> 
+                    基本規則:<br>
+                    字串可以跟字串相加 "abc" + "abc<br>
+                    字串不能跟數字相加 "abc" + 1<br>
+                    數字可以跟數字相加 &nbsp1 + 1<br><br>
+                    Python 資料類型<br>
+                    <table>
+                        <tr>
+                            <th> 資料類型 </th>
+                            <th> 描述 </th>
+                        </tr>
+                        <tr>
+                            <td> str </td>
+                            <td> String;  字串，用 "" 或 '' 包起來的都是str </td>
+                        </tr>
+                        <tr>
+                            <td> int </td>
+                            <td> Integer; 正數 </td>
+                        </tr>
+                        <tr>
+                            <td> float </td>
+                            <td> Float;   帶小數點的數字 </td>
+                        </tr>
+                        <tr>
+                            <td> bool </td>
+                            <td> boolean; 布林值 True and False </td>
+                        </tr>
+                        <tr>
+                            <td> complex </td>
+                            <td>  3+5j</td>
+                        </tr>
+                        <tr>
+                            <td> None </td>
+                            <td> None; 就是"無"，呼叫function後有可能會回傳這個</td>
+                        </tr>
+                    </table>
+                </p>
+        </div>
+        <br>
+
+        <!-- Variables -->
+        <div class="myDiv">
+            <h2> 變數 </h2>
+                <p>
+                    s = "a"<br>
+                    n = 1<br>
+                    f = 1.5<br>
+                    b = True<br>
+                </p>
+                <p> 簡單來說是把＝分成左右兩邊先把右邊的值都勻算完之後assign 給左邊的變數 </p>
+                <p>
+                多重指派 : s, n, b = "A", 1, True<br>
+                同時指派多個變數 : a = b = c = "ABC"<br>
+                </p>
+        </div>
+        <br>
+
+        <!-- Type Casting -->
+        <div class="myDiv">
+            <h2> 類型轉換 </h2>
+                <p>
+                    int(), float(), str()...<br>
+                    a = str(1) &nbsp;&nbsp;把轉 1 成字串給 a<br>
+                    b = int("1") 把轉"1"成數字給 b
+                </p>
+        </div>
+        <br>
+
+        <!-- comment -->
+        <div class="myDiv">
+            <h2> 註解 </h2>
+                <p>
+                    程式不會執行註解內的內容，這是給人看的<br>
+                    多行註解 六個 " 或 ' 包起來<br>
+                    """<br>
+                    abcdefg<br>
+                    """<br><br>
+                    '''<br>
+                    abcdefg<br>
+                    '''<br>
+                    單行註解用 #<br>
+                    # This is a comment<br>
+                </p>
+        </div>
+        <br>
+
+        <!-- String -->
+        <div class="myDiv">
+            <h2> 字串 </h2>
+                <p>
+                    ' '、" "、str()、input()包起來的都是字串<br>
+                    <a href="String.html" style="font-size: 20px; color:rgb(0, 187, 255)"> String</a>
+                </p>
+        </div>
+        <br>
+
+        <!-- Bool -->
+        <div class="myDiv">
+            <h2> 布林值 </h2>
+                <p>
+                    條件成立為真反之為假<br>
+                    print(bool("Hello")) True<br>
+                    print(bool(15)) True<br>
+                    只要bool內有東西就是 True<br>
+                    <table>
+                        <tr>
+                            <th> 布林值 </th>
+                            <th> 描述 </th>
+                        </tr>
+                        <tr>
+                            <td> == </td>
+                            <td> 比較兩個值是否相等 </td>
+                        </tr>
+                        <tr>
+                            <td> != </td>
+                            <td> 比較兩個值是否不相等 </td>
+                        </tr>
+                        <tr>
+                            <td> > </td>
+                            <td> 比較左邊的值是否大於右邊的值 </td>
+                        </tr>
+                        <tr>
+                            <td> >= </td>
+                            <td> 比較左邊的值是否大於或等於右邊的值 </td>
+                        </tr>
+                        <tr>
+                            <td> < </td>
+                            <td> 比較左邊的值是否小於右邊的值 </td>
+                        </tr>
+                        <tr>
+                            <td> <= </td>
+                            <td> 比較左邊的值是否小於或等於右邊的值 </td>
+                        </tr>
+                        <tr>
+                            <td> not </td>
+                            <td> 把True 變False ，False 變True</td>
+                        </tr>
+                    </table>
+                </p>
+        </div>
+        <br>
+
+        <!-- 運算符 -->
+        <div class="myDiv">
+            <h2> 運算符 </h2>
+                <p>
+                    邏輯運算符<br>
+                    + 加<br>
+                    - 減<br>
+                    * 乘<br>
+                    / 除<br>
+                    // 整除<br>
+                    % 取於數<br>
+                    ** 次方<br><br>
+                    <a href="運算符.html" style="font-size: 20px; color:rgb(0, 187, 255)"> 運算符 </a>
+                </p>
+        </div>
+        <br>
+
+        <!-- if else-->
+        <div class="myDiv">
+            <h2> if、elseif、else </h2>
+                <p>
+                    s = input()<br>
+                    if s == "A":<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("a")<br>
+                    else if s == "B":<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("b")<br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("c")<br><br>
+                    if 為True 就執行if 內的程式<br>
+                    else if 是if 為False 時執行，else if 可以不只有一個<br>
+                    else 是所有if、else if 都為False時執行<br>
+                    要用else if 跟else 一定要先有一個if
+                </p>
+        </div>
+        <br>
+
+        <!-- match -->
+        <div class="myDiv">
+            <h2> match </h2>
+                <p>
+                    
+                </p>
+        </div>
+        <br>
+
+        <!-- for loop -->
+        <div class="myDiv">
+            <h2> for loop </h2>
+                <p>
+                    for i in range(1, 10):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(i)<br><br>
+                    <u> i </u> 可以自己取名字<br>
+                    range(start, stop, step) 內放的是數字<br>
+                    第一個是起始值，第二個是結束值(不包含自己)，第三個是遞增或遞減的值(可選)<br>
+                    for i in range(1, 10): 是印０～９<br><br>
+
+                    for i in range(1, 10):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(i)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;if i == 5:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("ABC")<br>
+                    如果for 沒有沒中斷的話，會執行else<br>
+                </p>
+            <h2> for each </h2>
+                <p>
+                    lst = [1, 2, 3]<br>
+                    for i in lst:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(i)<br>
+                    用for 把list 裡面的值印出來<br><br>
+                    
+                    for i in "abcd":<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(i)<br>
+                    str 也可以<br>
+                </p>
+                <a href="break.html" style="font-size: 20px; color:rgb(0, 187, 255)" > contuine、break、pass </a>
+        </div>
+        <br>
+
+        <!-- while loop -->
+        <div class="myDiv">
+            <h2> while loop </h2>
+                <p>
+                    i = 1<br>
+                    while i < 10:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(i)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;i += 1<br>
+                    while 只要條件為真就會一直執行，也可以用break來停止
+
+                    while i < 10:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(i)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;i += 1<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;if i == 5:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("ABC")<br>
+                    如果while 沒有沒中斷的話，會執行else<br>
+                </p>
+        </div>
+        <br>
+
+        <!-- List -->
+        <div class="myDiv">
+            <h2> List </h2>
+            <p>
+                list 允許重複 可變 有序的<br>
+                創建方式<br>
+                lst = []<br>
+                lst = list()<br>
+                <a href="List.html" style="font-size: 20px; color: rgb(0, 187, 255)"> List </a>
+            </p>
+        </div>
+        <br>
+
+    </body>
+</html>
