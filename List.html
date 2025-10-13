@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title> Python List</title>
+        <style>
+            h2 {
+                color: rgb(249, 193, 120);            
+            }
+            p {
+                color: rgb(230, 225, 225);
+                margin-left: 20px;
+            }
+            .myDiv {
+                background-color: rgb(94, 94, 94);
+                border: 1px solid rgb(94, 94, 94);
+                padding: 20px;
+            }
+            table, th, td {
+                border: 1px solid rgb(230, 225, 225);
+                color: rgb(230, 225, 225);
+                text-align: center;
+                border-collapse: collapse;
+                padding:5px;
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+
+    <body style="background-color:rgb(42, 42, 42)">
+        <h1 style="color: rgb(255, 190, 105);"> 列表;list </h1>
+        <div class="myDiv">
+            <a href="Python.html" style="font-size: 20px; color:rgb(0, 187, 255)"> Back </a> <br>
+            
+            <h2> 列表項目 </h2>
+            <p>
+                len(lst) 取list的長度<br>
+                list 裡面什麼都可以放<br>
+                lst1 = ["a", "b", "c"]<br>
+                lst2 = [1, 2, 3]<br>
+                lst3 = [True, False, False]<br>
+                lst4 = ["a", 1, True]<br>
+            </p>
+        </div>
+        <br>
+
+        <div class="myDiv">
+            <h2> 索引 </h2>
+            <p>
+                第一個項目有索引[0]<br>
+                lst = [1, 2, 3, 4, 5, 6]<br>
+                lst[0] 會印 1<br>
+                lst[-1] 會印 4<br>
+                lst[1:3] 會印 2 3<br>
+                從索引 1開始，到索引 3(不含)結束 <br>
+                lst[:4] 從開頭到第4個(不含)全部印出來<br>
+                lst[2:] 從第二個印到最後一個<br><br>
+                1 in lst 查看指定項目是否在list內，回傳bool<br>
+            </p>
+        </div>
+        <br>
+
+        <div class="myDiv">
+                <h2> 改變值 </h2>
+                <p>
+                    lst = [1, 2, 3, 4, 5]<br>
+                    lst[2] = 5 索引2 的值會變成5<br>
+                    lst[1:3] = [10, 11] 索引1 到2 的值會變成10 跟11<br>
+                    lst[1:3] = 10 索引1 到2 的值會變成10<br><br>
+                </p>
+        </div>
+        <br>
+
+        <div class="myDiv">
+            <h2> 插入 </h2>
+            <p>
+                lst = [1, 2, 3]<br>
+                lst.insert(2, 5) 索引2 的值差入5<br>
+            </p>
+        </div>
+        <br>
+
+        <div class="myDiv">
+            <h2> 新增 </h2>
+            <p>
+                lst1 = [1, 2]<br>
+                lst2 = [4, 5]<br>
+                lst1.append(3) 把3 加到lst1 的最後面<br>
+                lst1.extend(lst2) 打lst2的所值加到lst1裡面
+            </p>
+        </div>
+        <br>
+
+        <div class="myDiv">
+            <h2>刪除</h2>
+            <p>
+                lst = ["A", "B", "C"]
+                lst.remove("A") 把A刪掉
+                lst.pop(1) 刪除指定索引的值
+                del lst[0] 刪除索引為0的值
+                del lst 刪除整個list
+                lst.clear() 清空list
+            </p>
+        </div>
+        <br>
+
+        <div class="myDiv">
+            <h2>循環列表</h2>
+            <p>
+                lst = ["A", "B", "C"]<br>
+                for i in lst:<br>
+                    print(i)<br>
+                用foreach 把list 內所有值都印出來<br><br>
+                
+                for i in range(len(lst)):<br>
+                    print(lst[i])<br>
+                用索引的方式把值印出來<br>
+
+                [print(i) for x in lst]<br>
+            </p>    
+        </div>
+          
+    </body>
+</html>
