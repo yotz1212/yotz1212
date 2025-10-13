@@ -2,7 +2,11 @@
 <html>
     <meta charset="UTF-8">
     <head>
-        <style>
+        
+    </head>
+
+    <body style="background-color:rgb(42, 42, 42)">
+    <style>
             h2 {
                 color: rgb(249, 193, 120);            
             }
@@ -26,9 +30,6 @@
                 color: rgb(230, 225, 225);
             }
         </style>
-    </head>
-
-    <body style="background-color:rgb(42, 42, 42)">
         <h1 style="color: rgb(230, 225,225)"> Python </h1>
         <!-- intput output -->
         <div class="myDiv">
