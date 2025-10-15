@@ -4,7 +4,7 @@
     <head>
         <title> Python List</title>
         <style>
-            h2 {
+            h2, h3 {
                 color: rgb(249, 193, 120);            
             }
             p {
@@ -15,7 +15,7 @@
                 background-color: rgb(94, 94, 94);
                 border: 1px solid rgb(94, 94, 94);
                 padding: 20px;
-            }
+            }s
             table, th, td {
                 border: 1px solid rgb(230, 225, 225);
                 color: rgb(230, 225, 225);
@@ -74,8 +74,8 @@
         <div class="myDiv">
             <h2> 插入 </h2>
             <p>
-                lst = [1, 2, 3]<br>
-                lst.insert(2, 5) 索引2 的值差入5<br>
+                lst = [1, 2, 3]
+                lst.insert(2, 5) 索引2 的值差入5
             </p>
         </div>
         <br>
@@ -83,9 +83,9 @@
         <div class="myDiv">
             <h2> 新增 </h2>
             <p>
-                lst1 = [1, 2]<br>
-                lst2 = [4, 5]<br>
-                lst1.append(3) 把3 加到lst1 的最後面<br>
+                lst1 = [1, 2]
+                lst2 = [4, 5]
+                lst1.append(3) 把3 加到lst1 的最後面
                 lst1.extend(lst2) 打lst2的所值加到lst1裡面
             </p>
         </div>
@@ -94,12 +94,12 @@
         <div class="myDiv">
             <h2>刪除</h2>
             <p>
-                lst = ["A", "B", "C"]
-                lst.remove("A") 把A刪掉
-                lst.pop(1) 刪除指定索引的值
-                del lst[0] 刪除索引為0的值
-                del lst 刪除整個list
-                lst.clear() 清空list
+                lst = ["A", "B", "C"]<br>
+                lst.remove("A") 把A刪掉<br>
+                lst.pop(1) 刪除指定索引的值<br>
+                del lst[0] 刪除索引為0的值<br>
+                del lst 刪除整個list<br>
+                lst.clear() 清空list<br>
             </p>
         </div>
         <br>
@@ -107,18 +107,90 @@
         <div class="myDiv">
             <h2>循環列表</h2>
             <p>
-                lst = ["A", "B", "C"]<br>
+                lst = ["A", "B", "C"]<br><br>
                 for i in lst:<br>
-                    print(i)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(i)<br>
                 用foreach 把list 內所有值都印出來<br><br>
                 
                 for i in range(len(lst)):<br>
-                    print(lst[i])<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(lst[i])<br>
                 用索引的方式把值印出來<br>
 
                 [print(i) for x in lst]<br>
             </p>    
         </div>
-          
+        <br>
+        
+        <div class="myDiv">
+            <h2>foreach</h2>
+            <p>
+                lst = [1, 2, 3, 4]<br><br>
+                for i in lst:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(i)<br>
+                list, tuple, dict, set 可以用for each的方式直接使用，這樣可以直接拿到 value但是沒有辦法拿到 index。<br>
+            </p>
+        </div>
+        <br>
+
+        <div class="myDiv">
+            <h2>排序</h2>
+            <ul>
+            <h3>升序</h3>
+            <p>
+                lst = [1, 2, 3, 4]<br>
+                lst.sort()<br>
+                預設會按字母、數字升序對清單進行排序<br><br>
+            </p>
+            <h3>降序</h3>
+            <p>
+                lst.sort(reverse = True)<br>
+                排序後返過來<br>
+            </p>
+            <h3>逆序</h3>
+            <p>
+                lst.reverse()<br>
+                顛倒目前順序
+            </p>
+            </ul>
+        </div>
+        <br>
+
+        <div class="myDiv">
+            <h3>複製</h3>
+            <p>
+                lst1 = [1, 2, 3, 4]<br>
+                lst2 = lst1 這個方法會讓 lst1在變動得時候 lst2也會跟著變動<br>
+                lst3 = lst1.copy()<br>
+                lst4 = list(lst1)<br>
+                lst5 = lst[:]<br>
+            </p>
+        </div>
+        <br>
+
+        <div class="myDiv">
+            <h2>加入list</h2>
+            <h3>連結兩個 list</h3>
+            <p>
+                lst1 = [1, 2, 3]<br>
+                lst2 = [4, 5, 6]<br>
+                lst3 = lst1 + lst2<br>
+            </p>
+
+            <h3>append</h3>
+            <p>
+                lst = [1, 2, 3]<br>
+                lst.append(4)<br>
+                把 4加到 lst最後面
+            </p>
+
+            <h3>extend</h3>
+            <p>
+                lst1 = [1, 2, 3]<br>
+                lst2 = [4, 5, 6]<br>
+
+                lst1.extend(lst2)<br>
+                把 lst2的直加入道 lst1中
+            </p>
+        </div>
     </body>
 </html>
